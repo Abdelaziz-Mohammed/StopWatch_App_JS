@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+}
+:root {
+    --main-color: #f44336;
+}
+body {
+    background-color: #edeaff;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 25px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+.app h1 {
+    font-size: 35px;
+    color: var(--main-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.app h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: #777;
+}
+.app h1 i {
+    color: #777;
+    font-size: 20px;
+}
+.app h1 i:first-child {
+    align-self: flex-start;
+}
+.app h1 i:last-child {
+    align-self: flex-end;
+}
+.app h2 {
+    font-size: 50px;
+    margin: 60px 0;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app h2 span {
+    color: #777;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+.app .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.app .btns button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.app .btns button:nth-child(2) {
+    border: none;
+    background-color: var(--main-color);
+    width: 70px;
+    height: 70px;
+}
+.app .btns button i {
+    font-size: 20px;
+    color: lightgray;
+}
+.app .btns button:nth-child(2) i {
+    font-size: 25px;
+    color: white;
+    padding-left: 3px;
+}
